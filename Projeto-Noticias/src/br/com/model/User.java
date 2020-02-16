@@ -6,42 +6,47 @@ import javax.persistence.Table;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 
-@Entity
-@Table(name="bdnews", schema="public")
+@Entity(name = "Users") //declarando entidade do bd
+@Table(name="Users")
 public class User {
+
+	@Id  //informando chave primaria
+	@GeneratedValue //declarando como auto incremento no bd
+	@Column(name = "id_user") //renomeando coluna para o bd
+	private int idUser;
 	
-	@Column
-	private String email_user;
+	@Column(name = "email_user")
+	private String emailUser;
 	
-	@Column
-	private String password_user;
+	@Column(name = "password_user")
+	private String passwordUser;
 	
-	@Id 
-	private int id_user;
-
 	
-	public String getEmail_user() {
-		return email_user;
+	public User() {}
+	
+
+	public String getEmailUser() {
+		return emailUser;
 	}
 
-	public void setEmail_user(String email_user) {
-		this.email_user = email_user;
+	public void setEmailUser(String emailUser) {
+		this.emailUser = emailUser;
 	}
 
-	public String getPassword_user() {
-		return password_user;
+	public String getPasswordUser() {
+		return passwordUser;
 	}
 
-	public void setPassword_user(String password_user) {
-		this.password_user = password_user;
+	public void setPasswordUser(String passwordUser) {
+		this.passwordUser = passwordUser;
 	}
 
-	public int getId_user() {
-		return id_user;
+	public int getIdUser() {
+		return idUser;
 	}
 
-	public void setId_user(int id_user) {
-		this.id_user = id_user;
-	}
-
+	public void setIdUser(int idUser) {
+		this.idUser = idUser;
+	}	
+	
 }
