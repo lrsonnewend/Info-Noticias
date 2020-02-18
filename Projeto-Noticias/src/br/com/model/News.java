@@ -1,41 +1,64 @@
 package br.com.model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity(name="News")
+@Table(name="News")
 public class News {
+	
+	@Id
+	@GeneratedValue
+	@Column(name="id_news")
+	private int idNews;
 
-	private int id_news;
-
-	private String title_news, body_news, data_news;
+	@Column(name="title_news")
+	private String titleNews;
+	
+	@Column(name="body_news")
+	private String bodyNews;
+	
+	@Column(name="data_news")
+	private String dataNews;
 
 	
-	public int getId_news() {
-		return id_news;
+	public News() {}
+	
+	public int getIdNews() {
+		return idNews;
 	}
 
-	public void setId_news(int id_news) {
-		this.id_news = id_news;
+	public void setIdNews(int idNews) {
+		this.idNews = idNews;
 	}
 
-	public String getTitle_news() {
-		return title_news;
+	public String getTitleNews() {
+		return titleNews;
 	}
 
-	public void setTitle_news(String title_news) {
-		this.title_news = title_news;
+	public void setTitleNews(String titleNews) {
+		this.titleNews = titleNews;
 	}
 
-	public String getBody_news() {
-		return body_news;
+	public String getBodyNews() {
+		return bodyNews;
 	}
 
-	public void setBody_news(String body_news) {
-		this.body_news = body_news;
+	public void setBodyNews(String bodyNews) {
+		this.bodyNews = bodyNews;
 	}
 
-	public String getData_news() {
-		return data_news;
+	public String getDataNews() {
+		return dataNews;
 	}
 
-	public void setData_news(String data_news) {
-		this.data_news = data_news;
+	public void setDataNews(String dataNews) {
+		this.dataNews = dataNews;
 	}
+
+	
+
 }

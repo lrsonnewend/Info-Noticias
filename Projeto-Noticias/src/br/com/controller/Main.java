@@ -2,21 +2,23 @@ package br.com.controller;
 
 import org.hibernate.Session;
 import br.com.connection.HibernateUtil;
+import br.com.model.News;
 import br.com.model.User;
 
 public class Main {
 
 	public static void main(String[] args) {
 		
-		EngineUser euser = new EngineUser();
+		EngineNews eNews = new EngineNews();
 		
-		User user = new User();
-		user.setEmailUser("email.teste@email.com");
-		user.setPasswordUser("1x2x3x4");
+		News news = new News();
+		news.setTitleNews("titulo teste");
+		news.setBodyNews("corpo teste da noticia!");
+		news.setDataNews("18/02/2020");
 		
-		int idUser = euser.saveUser(user);
+		int idNews = eNews.saveNews(news);
 		
-		System.out.println("Usuario "+idUser+" salvo!");
+		System.out.println("Noticia "+idNews+" salva!");
 		
 		/*Session session = HibernateUtil.getSessionFactory().openSession();
 		

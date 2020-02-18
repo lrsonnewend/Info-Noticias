@@ -4,7 +4,6 @@ import org.hibernate.Transaction;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-
 import br.com.connection.HibernateUtil;
 import br.com.model.User;
 
