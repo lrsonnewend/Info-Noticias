@@ -1,0 +1,47 @@
+package br.com.model;
+
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+
+@Entity(name = "User")
+@Table(name="User")
+public class User {
+	
+	@Column
+	private String emailUser;
+	
+	@Column
+	private String passwordUser;
+	
+	@Id 
+	private int idUser;
+
+	
+	public String getEmailUser() {
+		return email_user;
+	}
+
+	public void setEmailUser(String emailser) {
+		this.email_user = email_user;
+	}
+
+	public String getPassword_user() {
+		return password_user;
+	}
+
+	public void setPassword_user(String password_user) {
+		this.password_user = password_user;
+	}
+
+	public int getId_user() {
+		return id_user;
+	}
+
+	public void setId_user(int id_user) {
+		this.id_user = id_user;
+	}
+
+}

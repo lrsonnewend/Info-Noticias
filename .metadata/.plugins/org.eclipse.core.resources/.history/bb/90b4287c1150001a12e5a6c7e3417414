@@ -1,0 +1,12 @@
+package br.com.model;
+
+import com.fasterxml.classmate.AnnotationConfiguration;
+
+public class OpenConnection {
+
+	public static void main(String[] args) {
+
+		AnnotationConfiguration conf = new AnnotationConfiguration();
+	}
+
+}

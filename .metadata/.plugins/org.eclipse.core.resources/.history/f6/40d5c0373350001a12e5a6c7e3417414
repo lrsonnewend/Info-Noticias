@@ -1,0 +1,30 @@
+package br.com.dao;
+
+import javax.transaction.Transaction;
+import org.hibernate.HibernateException;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+import br.com.connection.HibernateUtil;
+import br.com.model.User;
+
+public class UserDAO {
+	
+	public int saveUser(User user) {
+		
+		Session session = null;
+		
+		Integer insertUser = 0;
+		
+		SessionFactory sessionFactory = HibernateUtil.getSessionFactory(); 
+		
+		try {
+			session = sessionFactory.openSession();
+			
+			Transaction transaction = (Transaction) session.beginTransaction();
+		}catch(HibernateException e) {
+			System.err.println("erro ao inserir usuario: "+e);
+		}
+	}
+
+}

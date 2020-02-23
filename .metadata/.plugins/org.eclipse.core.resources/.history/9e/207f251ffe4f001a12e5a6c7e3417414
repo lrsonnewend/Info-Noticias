@@ -1,0 +1,7 @@
+package Model;
+
+public class News {
+	private int id_news;
+	private String title_news, body_news;
+
+}

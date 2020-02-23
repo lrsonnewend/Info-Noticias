@@ -1,0 +1,16 @@
+package br.com.controller;
+
+import org.hibernate.Session;
+
+import br.com.connection.HibernateUtil;
+import br.com.model.User;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Session session = HibernateUtil.getSessionFactory().openSession();
+		
+		session.beginTransaction();
+	}
+
+}

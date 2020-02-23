@@ -1,0 +1,10 @@
+package br.com.controller;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+
+public class EngineUser {
+	EntityManagerFactory emf;
+	EntityManager em;
+
+}

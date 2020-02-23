@@ -1,0 +1,11 @@
+package br.com.controller;
+
+import br.com.dao.NewsDAO;
+
+public class EngineNews {
+	private final NewsDAO newsDao = new NewsDAO();
+	
+	public int saveNews() {
+		return this.newsDao.saveNews(news);
+	}
+}
