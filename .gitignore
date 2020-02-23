@@ -3,3 +3,14 @@
 
 # Ignore Gradle build output directory
 build
+
+#ignored folders
+build/
+.gradle/
+gradle/
+.nb-gradle/
+
+#ignored extensions
+.exe
+.bin
+.class
