@@ -5,8 +5,10 @@
 build
 
 #ignored folders
-build/
 .gradle/
+.recommenders/cache
+.metadata/
+gradle/wrapper
 gradle/
 .nb-gradle/
 
