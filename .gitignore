@@ -9,7 +9,8 @@ build/
 .gradle
 gradle/
 .nb-gradle/
-.settings/
+.settings
+.vscode
 
 #ignored extensions
 .exe
