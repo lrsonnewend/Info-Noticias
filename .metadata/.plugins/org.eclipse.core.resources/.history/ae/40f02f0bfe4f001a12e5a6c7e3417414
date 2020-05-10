@@ -1,6 +1,0 @@
-package Model;
-
-public class News {
-	private int id_news;
-
-}

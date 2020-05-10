@@ -1,9 +1,0 @@
-package Model;
-
-public class User {
-	private String  email_user, password_user;
-	private int id_user;
-	
-	
-
-}
