@@ -37,7 +37,7 @@ dependencies {
 
     implementation 'org.hibernate:hibernate-core:5.3.6.Final'
 
-    compile group: 'org.xerial', name: 'sqlite-jdbc', version: '3.31.1'
+    implementation 'mysql:mysql-connector-java:8.0.18'
 }
 
 // Define the main class for the application
