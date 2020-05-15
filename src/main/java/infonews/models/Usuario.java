@@ -3,6 +3,7 @@ package infonews.models;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -10,11 +11,8 @@ import javax.persistence.Table;
 @Table(name = "usuarios")
 public class Usuario {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-
-    @Column(name = "nome", nullable = false)
-    private String nome;
 
     @Column(name = "email", nullable = false)
     private String email;
@@ -37,12 +35,6 @@ public class Usuario {
         return id;
     }
 
-    /**
-     * @return the nome
-     */
-    public String getNome() {
-        return nome;
-    }
 
     /**
      * @return the email
@@ -51,12 +43,14 @@ public class Usuario {
         return email;
     }
 
+
     /**
      * @return the senha
      */
     public String getSenha() {
         return senha;
     }
+
 
     /**
      * @return the isAdmin
@@ -65,6 +59,7 @@ public class Usuario {
         return isAdmin;
     }
 
+
     /**
      * @param id the id to set
      */
@@ -72,12 +67,6 @@ public class Usuario {
         this.id = id;
     }
 
-    /**
-     * @param nome the nome to set
-     */
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
 
     /**
      * @param email the email to set
@@ -86,12 +75,14 @@ public class Usuario {
         this.email = email;
     }
 
+
     /**
      * @param senha the senha to set
      */
     public void setSenha(String senha) {
         this.senha = senha;
     }
+
 
     /**
      * @param isAdmin the isAdmin to set
