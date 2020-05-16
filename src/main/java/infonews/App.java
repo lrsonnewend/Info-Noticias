@@ -3,36 +3,48 @@
  */
 package infonews;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
+import java.util.ArrayList;
+import java.util.List;
 
-import infonews.dao.Entity;
+import infonews.dao.UsuarioDAO;
 import infonews.models.*;
 
 
-/* import infonews.connection.HibernateUtil;
-import org.hibernate.Session; */
-
-public class App {
+public class App{
     public String getGreeting() {
         return "Hello world.";
     }
 
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("info_noticias");
+        
+        UsuarioDAO dao = new UsuarioDAO();
+
+        List<Usuario> usuarios = new ArrayList<>();
+        
+        usuarios = dao.getAllUsers();
+
+        /* Usuario user = new Usuario();
+
+        user.setEmail("testando@email.com");
+        user.setSenha("testando4321");
+        user.setIsAdmin(false);
+
+        dao.createUser(user); */
+
+        
+        /* EntityManagerFactory emf = Persistence.createEntityManagerFactory("info_noticias");
         EntityManager em = emf.createEntityManager();
 
         Usuario user = new Usuario();
-        user.setEmail("email@teste.com");
-        user.setSenha("1234");
-        user.setIsAdmin(true);
+        user.setEmail("lucas@email.com");
+        user.setSenha("4321");
+        user.setIsAdmin(false);
         em.getTransaction().begin();
         em.persist(user);
         em.getTransaction().commit();
         //fechando conexões
         em.close();
-        emf.close();  
+        emf.close();  */ 
     }
 }
