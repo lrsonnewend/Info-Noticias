@@ -6,6 +6,7 @@ package infonews;
 import java.util.ArrayList;
 import java.util.List;
 
+import infonews.dao.NoticiaDAO;
 import infonews.dao.UsuarioDAO;
 import infonews.models.*;
 
@@ -17,12 +18,7 @@ public class App{
 
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
-        
-        UsuarioDAO dao = new UsuarioDAO();
-
-        List<Usuario> usuarios = new ArrayList<>();
-        
-        usuarios = dao.getAllUsers();
+        NoticiaDAO dao = new NoticiaDAO();
 
         /* Usuario user = new Usuario();
 
@@ -31,6 +27,15 @@ public class App{
         user.setIsAdmin(false);
 
         dao.createUser(user); */
+
+        Noticia news = new Noticia();
+        news.setTitulo("Governo libera auxílio emergencial de R$600,00");
+        news.setCorpo("O governo liberou a verba para auxílio de pessoas desempregadas para"+
+        "poderem ter uma renda extra para as coisas básicas: alimentos e pagar contas.");
+        news.setDataCriacao("07/04/2020");
+
+        dao.createNews(news);
+        
 
         
         /* EntityManagerFactory emf = Persistence.createEntityManagerFactory("info_noticias");

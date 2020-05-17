@@ -1,6 +1,5 @@
 package infonews.dao;
 
-import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -9,7 +8,6 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
 import org.hibernate.HibernateException;
-import infonews.factory.Connection;
 import infonews.models.Usuario;
 
 public class UsuarioDAO{
