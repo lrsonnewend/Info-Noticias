@@ -23,6 +23,9 @@ public class Noticia {
     @Column(name = "data_criacao", nullable = false)
     private String dataCriacao;
 
+    @Column(name = "link_img")
+    private String linkImg;
+
     public Noticia() {
 
     }
@@ -60,6 +63,13 @@ public class Noticia {
 
 
     /**
+     * @return the linkImg
+     */    
+    public String getLinkImg() {
+        return linkImg;
+    }
+
+    /**
      * @param id the id to set
      */
     public void setId(int id) {
@@ -88,6 +98,13 @@ public class Noticia {
      */
     public void setDataCriacao(String dataCriacao) {
         this.dataCriacao = dataCriacao;
+    }
+
+    /**
+     * @param linkImg the linkImg to set
+     */
+    public void setLinkImg(String linkImg) {
+        this.linkImg = linkImg;
     }
 
 

@@ -15,10 +15,9 @@ import javax.servlet.annotation.WebServlet;
 
 @WebServlet(urlPatterns = { "/usuarios" })
 public class UsuariosController extends HttpServlet {
+    UsuarioDAO dao = new UsuarioDAO();
     @Override
     public void doGet(HttpServletRequest req, HttpServletResponse res) {
-        UsuarioDAO dao = new UsuarioDAO();
-
         List<Usuario> users = dao.getAllUsers();
         
         try{
@@ -27,5 +26,11 @@ public class UsuariosController extends HttpServlet {
         }catch(Exception e){ 
             System.err.println("Erro ao listar usuarios: "+e);
         }
+   }
+
+   @Override
+   public void doPost(HttpServletRequest req, HttpServletResponse res){
+       
+
    }
 }

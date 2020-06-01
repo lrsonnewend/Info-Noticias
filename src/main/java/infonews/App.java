@@ -18,7 +18,19 @@ public class App{
 
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
-        NoticiaDAO dao = new NoticiaDAO();
+        
+        /* NoticiaDAO dao = new NoticiaDAO();
+        
+        Noticia news2 = new Noticia();
+
+        news2.setTitulo("ITA desenvolve equipamento para detectar coronavírus no ar");
+        news2.setCorpo("A intenção dos idealizadores é que, por meio deste aparelho, seja"+
+        "possível monitorar as áreas com grande circulação de pessoas e, consequentemente,"+
+        "indicar possíveis riscos de contaminação do vírus nestes espaços.");
+        news2.setDataCriacao("25/05/2020");
+        news2.setLinkImg("https://lh3.googleusercontent.com/proxy/IG3vDD2mjPK7j_fuOywg6Vc-PBV5XujGxCnsEG2kNz9HhPt3DbT4IXIfsc7yYKso5Eyxwy6ObxuSJwTG6y_P0NXLBNpEn5gqQM0PPHvq8Cxd10UA0jpNV_QOglqQAd7CsObW0SqHVqCxCNfGngkcj4RpQPfHfXzyIG9-GXLnefZtKD05pkV5uAI");
+        
+        dao.createNews(news2); */
 
         /* Usuario user = new Usuario();
 
@@ -28,13 +40,13 @@ public class App{
 
         dao.createUser(user); */
 
-        Noticia news = new Noticia();
+        /* Noticia news = new Noticia();
         news.setTitulo("Governo libera auxílio emergencial de R$600,00");
         news.setCorpo("O governo liberou a verba para auxílio de pessoas desempregadas para"+
         "poderem ter uma renda extra para as coisas básicas: alimentos e pagar contas.");
         news.setDataCriacao("07/04/2020");
 
-        dao.createNews(news);
+        dao.createNews(news); */
         
 
         
