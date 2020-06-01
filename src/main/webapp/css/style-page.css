@@ -1,0 +1,43 @@
+.goTo{
+    transition: opacity 0s;
+}
+.goTo:hover{
+    transition: opacity 0s;
+    color: rgb(241, 118, 18);
+}
+
+ul{
+    overflow: hidden;
+    list-style-type: none;
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li{
+    padding: 10px;
+    float: left;
+}
+
+li a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 12px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+body{
+    margin: 0;
+}
+
+.conteudo{
+    font-family: 'DM Sans', sans-serif;
+    padding: 20px;
+    margin-top: 30px;
+    height: 1500px;
+}
