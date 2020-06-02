@@ -1,5 +1,5 @@
 .noticias-div{
-    float: left;
+    display: grid;
     padding: 10px;
-    /* height: 300px; /* Should be removed. Only for demonstration */ 
+    grid-template-columns: auto(2, 1fr);
 }

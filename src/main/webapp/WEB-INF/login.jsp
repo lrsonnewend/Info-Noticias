@@ -3,8 +3,9 @@
 <html>
     <head>
         <title>Login</title>
-        <%@ page contentType="text/html; charset=UTF-8" %>
+        <%@ page contentType="text/html; charset=UTF-8" %>        
         <link rel="stylesheet" href="./css/style-page.css">
+        <link rel="stylesheet" href="./css/login-page.css">
         <link rel="stylesheet" href="./css/noticias-page.css">        
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -15,6 +16,15 @@
             <div class="conteudo">
                 <section>
                     <h1>Login</h1>
+                    <form>
+                        <label for="fname">Usuário</label>
+                        <input type="text" id="fname" name="firstname" placeholder="email..">
+
+                        <label for="lname">Senha</label>
+                        <input type="password" id="lname" name="lastname" placeholder="senha...">
+
+                        <input type="submit" value="Submit">
+                    </form>
                 </section>
             </div>
 

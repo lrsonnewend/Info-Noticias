@@ -17,16 +17,14 @@
             <section>
                 <h1>Notícias</h1>
                 <div class="row">
-                    <div class="noticias-div">
-                        <c:forEach items="${noticias}" var="n">
-                                <div class="w3-card-4" style="width:24%">
-                                    <img src="${n.linkImg}" alt="imgnew" style="width:100%">
-                                    <div class="w3-container w3-center">
-                                        <p><c:out value="${n.titulo}" /></p>
-                                    </div>
-                                </div>
-                        </c:forEach>
-                    </div>
+                    <c:forEach items="${noticias}" var="n">
+                        <div class="w3-card-4 noticias-div" style="width:24%;">
+                            <img src="${n.linkImg}" alt="imgnew" style="width:100%">
+                            <div class="w3-container w3-center">
+                                <p><c:out value="${n.titulo}" /></p>
+                            </div>
+                        </div>
+                    </c:forEach>
                 </div>
             </section>
         </div>
