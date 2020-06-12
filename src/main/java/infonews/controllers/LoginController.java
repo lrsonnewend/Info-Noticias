@@ -21,5 +21,15 @@ public class LoginController extends HttpServlet{
         }catch (Exception e){
 			System.out.println("Erro ao acessar pagina de login: "+e);
 		}
-    }   
+    }
+    
+    @Override
+    public void doPost(HttpServletRequest req, HttpServletResponse res){
+        /* UsuarioDAO dao = new UsuarioDAO();
+
+        String email = req.setAttribute("email");
+        
+        String senha = req.setAttribute("senha"); */
+
+    }
 }
