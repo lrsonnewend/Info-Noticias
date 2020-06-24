@@ -17,7 +17,7 @@ public class LoginController extends HttpServlet{
     @Override
     public void doGet(HttpServletRequest req, HttpServletResponse res){
         try{
-            req.getRequestDispatcher("/WEB-INF/login.jsp").forward(req, res);
+            req.getRequestDispatcher("/jsp/login.jsp").forward(req, res);
         }catch (Exception e){
 			System.out.println("Erro ao acessar pagina de login: "+e);
 		}
@@ -25,7 +25,12 @@ public class LoginController extends HttpServlet{
     
     @Override
     public void doPost(HttpServletRequest req, HttpServletResponse res){
-        /* UsuarioDAO dao = new UsuarioDAO();
+        try{
+            req.getRequestDispatcher("index.html").forward(req, res);
+        }catch (Exception e){
+			System.out.println("Erro ao ir para home: "+e);
+		}
+       /*  UsuarioDAO dao = new UsuarioDAO();
 
         String email = req.setAttribute("email");
         

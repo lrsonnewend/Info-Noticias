@@ -22,7 +22,7 @@ public class UsuariosController extends HttpServlet {
         
         try{
             req.setAttribute("users", users);
-            req.getRequestDispatcher("/WEB-INF/usuarios.jsp").forward(req, res);
+            req.getRequestDispatcher("/jsp/usuarios.jsp").forward(req, res);
         }catch(Exception e){ 
             System.err.println("Erro ao listar usuarios: "+e);
         }
@@ -31,6 +31,5 @@ public class UsuariosController extends HttpServlet {
    @Override
    public void doPost(HttpServletRequest req, HttpServletResponse res){
        
-
    }
 }

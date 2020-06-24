@@ -23,7 +23,7 @@ public class NoticiasController extends HttpServlet {
 
         try{
             req.setAttribute("noticias", noticias);
-            req.getRequestDispatcher("/WEB-INF/noticias.jsp").forward(req, res);
+            req.getRequestDispatcher("/jsp/noticias.jsp").forward(req, res);
         }catch(Exception e){
             System.err.println("Erro ao listar notícias: "+e);
         }

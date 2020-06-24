@@ -47,4 +47,12 @@ public class NoticiaDAO {
 
         return noticias;
     }
+
+    public List<Noticia> getNoticia(int idNoticia){
+        List<Noticia> noticia = new ArrayList<>();
+
+        noticia = em.find(Noticia.class.getName(), idNoticia);
+
+        return noticia;
+    }
 }
