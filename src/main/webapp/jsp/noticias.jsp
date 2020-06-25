@@ -4,8 +4,8 @@
     <head>
         <%@ page contentType="text/html; charset=UTF-8" %>
         <%-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> --%>
-        <link rel="stylesheet" href="./css/style-page.css">
-        <link rel="stylesheet" href="./css/noticias-page.css">        
+        <link rel="stylesheet" href="./resources/css/style-page.css">
+        <link rel="stylesheet" href="./resources/css/noticias-page.css">        
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <title>Notícias</title>

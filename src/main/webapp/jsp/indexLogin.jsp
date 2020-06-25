@@ -4,28 +4,17 @@
     <head>
         <%@ page contentType="text/html; charset=UTF-8" %>
         <%-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> --%>
-        <link rel="stylesheet" href="./css/style-page.css">
-        <link rel="stylesheet" href="./css/noticias-page.css">        
+        <link rel="stylesheet" href="./resources/css/style-page.css">
+        <link rel="stylesheet" href="./resources/css/noticias-page.css">        
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <title>Notícias</title>
+        <title>Confira aqui todas as notícias!</title>
+        
     </head>
     <body>
         <jsp:include page="./navbarLogin.jsp" />
         <div class="conteudo">
-            <section>
-                <h1>Notícias</h1>
-                <div class="row">
-                    <c:forEach items="${noticias}" var="n">
-                        <div class="w3-card-4 noticias-div" style="width:24%;">
-                            <img src="${n.linkImg}" alt="imgnew" style="width:100%">
-                            <div class="w3-container w3-center">
-                                <p><c:out value="${n.titulo}" /></p>
-                            </div>
-                        </div>
-                    </c:forEach>
-                </div>
-            </section>
+                <h1>bem vindo login!</h1>
         </div>
     </body>
 </html>

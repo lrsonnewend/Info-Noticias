@@ -48,11 +48,17 @@ public class NoticiaDAO {
         return noticias;
     }
 
-    public List<Noticia> getNoticia(int idNoticia){
-        List<Noticia> noticia = new ArrayList<>();
+    public void remove(int idNoticia){
+        try{
+            Noticia noticia = em.find(Noticia.class, idNoticia);
 
-        noticia = em.find(Noticia.class.getName(), idNoticia);
+            em.getTransaction().begin();
+            
+            em.remove(noticia);
 
-        return noticia;
+            em.getTransaction().commit();
+        }catch(Exception e){
+            System.err.println("Erro ao deletar notícia: " +e);
+        }
     }
 }
