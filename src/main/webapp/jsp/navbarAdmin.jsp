@@ -4,13 +4,10 @@
         <a href="/Info-Noticias/indexLogin" class="goTo">Home</a>
     </li>
     <li>
-        <a href="/Info-Noticias/noticiasDetails" class="goTo">Consultar notícias</a>
+        <a href="/Info-Noticias/noticiasAdmin" class="goTo">Gerenciar usuários</a>
     </li>
     <li>
-        <a href="/Info-Noticias/noticiasAdmin" class="goTo">Editar usuários</a>
-    </li>
-    <li>
-        <a href="/Info-Noticias/noticiasAdmin" class="goTo">Editar notícias</a>
+        <a href="/Info-Noticias/noticiasAdmin" class="goTo">Gerenciar notícias</a>
     </li>
     <li style="float:right;">
         <a href="/Info-Noticias" class="goTo">Sair</a>

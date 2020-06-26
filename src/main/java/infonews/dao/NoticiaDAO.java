@@ -17,9 +17,8 @@ public class NoticiaDAO {
     
     public NoticiaDAO() {}
 
-    public void createNews(Noticia noticia){
+    public boolean createNews(Noticia noticia){
         try{
-            
             //inicia uma transação com o banco de dados
             em.getTransaction().begin();
 
@@ -29,11 +28,16 @@ public class NoticiaDAO {
             //finalizando a transação
             em.getTransaction().commit();
         }catch(HibernateException e){
-            System.err.println("Erro ao criar usuário: "+e);
+            System.err.println("Erro ao criar notícia: "+e);
+            
+            return false;
         }finally{
             em.close();
-            emf.close();
+            
+            emf.close();            
         }   
+        return true;
+
     }
     
     public List<Noticia> getAllNews(){
@@ -60,5 +64,11 @@ public class NoticiaDAO {
         }catch(Exception e){
             System.err.println("Erro ao deletar notícia: " +e);
         }
+    }
+
+    public void updateNews(Noticia noticia){
+        em.getTransaction().begin();
+        em.merge(noticia);
+        em.getTransaction().commit();
     }
 }

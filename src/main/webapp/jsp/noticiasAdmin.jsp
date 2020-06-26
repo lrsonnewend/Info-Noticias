@@ -18,14 +18,14 @@
         <jsp:include page="./navbarLogin.jsp" />
         <div class="conteudo">
             <section>
-                <h1>Notícias</h1>
+                <h2>Notícias</h2>
                 <div class="row">
                     <table>
                         <thead>
                             <tr>
-                                <td>#Id</td>
-                                <td>Título</td>
-                                <td></td>
+                                <td><b>#Id</b></td>
+                                <td><b>Título</b></td>
+                                <td><b>Ações</b></td>
                             </tr>
                         </thead>
                         <tbody>
@@ -33,11 +33,19 @@
                                 <tr>
                                     <td><c:out value="${n.id}" /></td>
                                     <td><c:out value="${n.titulo}" /></td>
-                                    <td><p onclick="remover(${n.id})">Excluir</p></td>
+                                    <td>
+                                        <a href="#" onclick="remover(${n.id})">Excluir</a> |
+                                        <a href="/Info-Noticias/updateNoticia">Alterar</a>
+                                    </td>
                                 </tr>                                 
                             </c:forEach>
                         </tbody>
                     </table>
+                    <div>
+                        <p>
+                            <a href="/Info-Noticias/createNoticia">Cadastrar nova notícia</a>
+                        </p>
+                    </div>
                 </div>
             </section>
         </div>

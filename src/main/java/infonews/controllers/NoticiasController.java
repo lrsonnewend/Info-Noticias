@@ -29,6 +29,24 @@ public class NoticiasController extends HttpServlet {
         }
     }
 
+    @Override
+    public void doPost(HttpServletRequest req, HttpServletResponse res){
+        NoticiaDAO dao  = new NoticiaDAO();
+        Noticia noticia = new Noticia();
+
+        noticia.setTitulo(req.getParameter("titulo"));
+        noticia.setCorpo(req.getParameter("corpo"));
+        noticia.setDataCriacao(req.getParameter("data"));
+        noticia.setLinkImg(req.getParameter("linkImg"));
+
+        if(dao.createNews(noticia)){
+            try{
+                res.sendRedirect(req.getContextPath() + "/noticiasAdmin");
+            }catch(Exception e){
+                System.err.println("Erro ao cadastrar notícia: "+e);
+            }
+        }
+    }
     /* @Override
 	public void doDelete(HttpServletRequest req, HttpServletResponse resp) {
 		try {
