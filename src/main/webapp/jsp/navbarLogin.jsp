@@ -6,9 +6,6 @@
     <li>
         <a href="/Info-Noticias/noticiasDetails" class="goTo">Consultar notícias</a>
     </li>
-    <li>
-        <a href="/Info-Noticias/noticiasAdmin" class="goTo">Editar sua morte</a>
-    </li>
     <li style="float:right;">
         <a href="/Info-Noticias" class="goTo">Sair</a>
     </li>

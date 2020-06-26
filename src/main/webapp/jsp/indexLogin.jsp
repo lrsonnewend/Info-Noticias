@@ -1,4 +1,9 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@page import="infonews.dao.UsuarioDAO" %>
+<%@page import="java.util.ArrayList"%>
+<%@page import="java.util.Arrays"%>
+<%@page import="java.util.Collections"%>
+<%@page import="java.util.List"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -14,13 +19,12 @@
     <body>
         <jsp:include page="./navbarLogin.jsp" />
         <div class="conteudo">
-                <h1>bem vindo login!</h1>
+            <h1>bem vindo usuário!</h1>
         </div>
     </body>
 </html>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="resources/js/usuarios.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>

@@ -16,12 +16,12 @@
             <div class="conteudo">
                 <section>
                     <h1>Login</h1>
-                    <form action="./jsp/indexLogin.jsp" method="post">
+                    <form action="login" method="post">
                         <label for="fname">Usuário</label>
-                        <input type="text" id="fname" name="firstname" placeholder="email..">
+                        <input type="text" id="email" name="email" placeholder="email..">
 
                         <label for="lname">Senha</label>
-                        <input type="password" id="lname" name="lastname" placeholder="senha...">
+                        <input type="password" id="senha" name="senha" placeholder="senha...">
 
                         <input type="submit" value="Submit">
                     </form>
