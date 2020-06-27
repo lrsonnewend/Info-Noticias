@@ -77,4 +77,28 @@ public class UsuarioDAO {
 
         return usuarios;
     }
+
+    public void remove(int idUsuario) {
+        try {
+            Usuario usuario = em.find(Usuario.class, idUsuario);
+
+            em.getTransaction().begin();
+
+            em.remove(usuario);
+
+            em.getTransaction().commit();
+        } catch (Exception e) {
+            System.err.println("Erro ao deletar usuário: " + e);
+        }
+    }
+
+    public void updateUsers(Usuario usuario){
+        try {
+            em.getTransaction().begin();
+            em.merge(usuario);
+            em.getTransaction().commit();
+        } catch (Exception e) {
+            System.err.println("Erro ao alterar usuário: " + e);
+        }
+    }
 }

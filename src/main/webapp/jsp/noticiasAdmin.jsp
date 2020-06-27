@@ -35,7 +35,7 @@
                                     <td><c:out value="${n.titulo}" /></td>
                                     <td>
                                         <a href="#" onclick="remover(${n.id})">Excluir</a> |
-                                        <a href="/Info-Noticias/updateNoticia">Alterar</a>
+                                        <a href="/Info-Noticias/updateNoticia?id=${n.id}">Alterar</a>
                                     </td>
                                 </tr>                                 
                             </c:forEach>

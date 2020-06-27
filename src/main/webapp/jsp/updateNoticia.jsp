@@ -10,16 +10,37 @@
         <%@ page contentType="text/html; charset=UTF-8" %>
         <%-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> --%>
         <link rel="stylesheet" href="./resources/css/style-page.css">
+        <link rel="stylesheet" href="./resources/css/login-page.css">
         <link rel="stylesheet" href="./resources/css/noticias-page.css">        
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <title>Confira aqui todas as notícias!</title>
-        
     </head>
     <body>
         <jsp:include page="./navbarAdmin.jsp" />
         <div class="conteudo">
-            <h2>Update noticia it works!</h2>
+            <h3>Alterar notícia</h3>
+            <form action="updateNoticia" method="post">
+            <c:forEach items="${noticia}" var="n">
+                    <input type="hidden" name="id" value="${n.id}" />
+                    
+                    <label for="ntitle">Título</label>
+                    <input type="text" name="titulo" value="${n.titulo}" />
+
+                    
+                    <label for="ncorpo">Corpo</label>
+                    <input type="text" name="corpo" value="${n.corpo}" />
+                    
+                    <label for="ndata">Data de publicação</label>
+                    <input type="text" name="data" value="${n.dataCriacao}" />
+
+                    <label for="nlinkImg">Link imagem</label>
+                    <input type="text" name="linkImg" value="${n.linkImg}" />
+                    
+                    <input type="submit" value="Alterar">
+                                   
+            </c:forEach>
+            </form>
         </div>
     </body>
 </html>
