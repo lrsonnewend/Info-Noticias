@@ -56,6 +56,14 @@ public class UsuarioDAO {
         return usuarioFind;
     }
 
+    public List<Usuario> findById(int id) {
+        List<Usuario> usuarioList = new ArrayList<>();
+        Usuario usuario= em.find(Usuario.class, id);
+        usuarioList.add(usuario);
+
+        return usuarioList;
+    }
+
     public Usuario findByEmail(final String email) {
         Usuario usuario = null;
         

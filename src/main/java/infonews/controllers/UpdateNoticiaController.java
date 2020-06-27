@@ -14,7 +14,7 @@ import java.util.List;
 import javax.servlet.annotation.WebServlet;
 
 @WebServlet(urlPatterns = { "/updateNoticia" })
-public class UpdateNoticiaController  extends HttpServlet{
+public class UpdateNoticiaController extends HttpServlet{
     @Override
     public void doGet(HttpServletRequest req, HttpServletResponse res){
         NoticiaDAO dao  = new NoticiaDAO();

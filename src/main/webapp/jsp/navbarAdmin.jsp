@@ -4,7 +4,7 @@
         <a href="/Info-Noticias/indexLogin" class="goTo">Home</a>
     </li>
     <li>
-        <a href="/Info-Noticias/noticiasAdmin" class="goTo">Gerenciar usuários</a>
+        <a href="/Info-Noticias/usuariosAdmin" class="goTo">Gerenciar usuários</a>
     </li>
     <li>
         <a href="/Info-Noticias/noticiasAdmin" class="goTo">Gerenciar notícias</a>

@@ -18,7 +18,7 @@
         <jsp:include page="./navbarLogin.jsp" />
         <div class="conteudo">
             <section>
-                <h2>Notícias</h2>
+                <h2>Gerenciar notícias</h2>
                 <div class="row">
                     <table>
                         <thead>
