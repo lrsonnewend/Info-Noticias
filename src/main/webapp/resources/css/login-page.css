@@ -8,17 +8,62 @@ input[type=text],input[type=password], select {
     box-sizing: border-box;
   }
   
-  input[type=submit] {
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.goTo{
+    transition: opacity 0s;
+}
+
+.goTo:hover{
+    transition: opacity 0s;
+    color: rgb(241, 118, 18);
+}
+
+ul{
+    overflow: hidden;
+    list-style-type: none;
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
     width: 100%;
-    background-color: #4CAF50;
+}
+
+li{
+    padding: 10px;
+    float: left;
+}
+
+li a{
+    display: block;
     color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  input[type=submit]:hover {
-    background-color: #45a049;
-  }
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 12px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+body{
+    margin: 0;
+}
+
+.conteudo{
+    font-family: 'DM Sans', sans-serif;
+    padding: 20px;
+    margin-top: 60px;
+    height: 1500px; 
+}

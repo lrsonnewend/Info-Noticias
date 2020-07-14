@@ -19,7 +19,8 @@
     <body>
         <jsp:include page="./navbarAdmin.jsp" />
         <div class="conteudo">
-            <h1>voce é admin!</h1>
+            <h1>Olá, admin!</h1>
+            <p>Utilize a barra de navegação para realizar os gerenciamentos.</p>
         </div>
     </body>
 </html>

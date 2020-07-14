@@ -19,7 +19,7 @@ public class UsuarioDAO {
     public UsuarioDAO() {
     }
 
-    public void createUser(Usuario user) {
+    public boolean createUser(Usuario user) {
         try {
 
             // inicia uma transação com o banco de dados
@@ -32,10 +32,12 @@ public class UsuarioDAO {
             em.getTransaction().commit();
         } catch (HibernateException e) {
             System.err.println("Erro ao criar usuário: " + e);
+            return false;
         } finally {
             em.close();
             emf.close();
         }
+        return true;
     }
 
     public List<Usuario> userExists(String email, String pass) {

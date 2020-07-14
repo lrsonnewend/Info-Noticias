@@ -1,7 +1,7 @@
 <%@ page contentType="text/html; charset=UTF-8" %>
 <ul>
     <li>
-        <a href="/Info-Noticias/indexLogin" class="goTo">Home</a>
+        <a href="/Info-Noticias/admin" class="goTo">Home</a>
     </li>
     <li>
         <a href="/Info-Noticias/usuariosAdmin" class="goTo">Gerenciar usuários</a>

@@ -11,15 +11,16 @@
         <%-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> --%>
         <link rel="stylesheet" href="./resources/css/style-page.css">
         <link rel="stylesheet" href="./resources/css/noticias-page.css">        
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <title>Confira aqui todas as notícias!</title>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+        <title>Bem vindo!</title>
         
     </head>
     <body>
         <jsp:include page="./navbarLogin.jsp" />
         <div class="conteudo">
-            <h1>bem vindo usuário!</h1>
+            <h1 style="font-family: 'DM Sans', sans-serif;">Olá!</h1>
+            <p>Utilize a barra acima para navegar no sistema!</p>
         </div>
     </body>
 </html>

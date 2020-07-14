@@ -15,7 +15,7 @@
         <title>Notícias Admin</title>
     </head>
     <body>
-        <jsp:include page="./navbarLogin.jsp" />
+        <jsp:include page="./navbarAdmin.jsp" />
         <div class="conteudo">
             <section>
                 <h2>Gerenciar notícias</h2>

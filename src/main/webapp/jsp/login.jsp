@@ -4,7 +4,7 @@
     <head>
         <title>Login</title>
         <%@ page contentType="text/html; charset=UTF-8" %>        
-        <link rel="stylesheet" href="./resources/css/style-page.css">
+        <%-- <link rel="stylesheet" href="./resources/css/style-page.css"> --%>
         <link rel="stylesheet" href="./resources/css/login-page.css">
         <link rel="stylesheet" href="./resources/css/noticias-page.css">        
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
@@ -15,7 +15,8 @@
         <jsp:include page="./navbar.jsp" />
             <div class="conteudo">
                 <section>
-                    <h1>Login</h1>
+                    <h1 style="font-family: 'DM Sans', sans-serif;">Login</h1>
+                    <hr>
                     <form action="login" method="post">
                         <label for="fname">Usuário</label>
                         <input type="text" id="email" name="email" placeholder="email..">
@@ -23,11 +24,12 @@
                         <label for="lname">Senha</label>
                         <input type="password" id="senha" name="senha" placeholder="senha...">
 
-                        <input type="submit" value="Submit">
+                        <input type="submit" value="Entrar">
                     </form>
                 </section>
+                <br>
+                <a href="/Info-Noticias/createUsuario">CADASTRE-SE AQUI!</a>
             </div>
-
     </body>
 </html>
 
