@@ -2,7 +2,7 @@
 .column {
     float: left;
     width: 25%;
-    padding: 0 10px;
+    padding: 0  15px;
   }
 
 .button {
@@ -17,7 +17,18 @@
     margin: 4px 2px;
     cursor: pointer;
 }
-  
+
+.button2 {
+  background-color: rgb(151, 204, 153);
+  border-radius: 10px;
+  color: white;
+  padding: 13px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+}
   /* Remove extra left and right margins, due to padding */
   .row {margin: 0 -5px;}
   
@@ -40,7 +51,7 @@
   /* Style the counter cards */
   .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 40px;
+    padding: 10px;
     text-align: center;
     background-color: #f1f1f1;
   }

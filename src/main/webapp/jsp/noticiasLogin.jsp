@@ -12,7 +12,7 @@
         <title>Notícias</title>
     </head>
     <body>
-        <jsp:include page="./navbar.jsp" />
+        <jsp:include page="./navbarLogin.jsp" />
         <div class="conteudo">
             <section>
                 <h1 style="font-family: 'DM Sans', sans-serif;"><b>Notícias</b></h1>
@@ -24,9 +24,10 @@
                                 <p> <c:out value="${n.titulo}"/> </p>
                                 <p style="font-family: 'DM Sans', sans-serif;">Data: <c:out value="${n.dataCriacao}"/> </p>
                                 <p>
-                                    <a href="#" class="button">Visualizar</a>
+                                    <a href="/Info-Noticias/noticiaDetails?id=${n.id}" class="button">Visualizar</a>
                                 </p>
                             </div>
+                            <br>
                         </div>
                     </c:forEach>
                 </div>

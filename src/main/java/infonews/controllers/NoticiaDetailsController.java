@@ -12,13 +12,17 @@ import java.util.List;
 
 import javax.servlet.annotation.WebServlet;
 
-@WebServlet(urlPatterns = { "/noticiasDetails" })
+@WebServlet(urlPatterns = { "/noticiaDetails" })
 public class NoticiaDetailsController extends HttpServlet {
     @Override
     public void doGet(HttpServletRequest req, HttpServletResponse res){
         NoticiaDAO dao  = new NoticiaDAO(); 
         
-        List<Noticia> noticias = dao.getAllNews();
+        String id = req.getParameter("id");
+
+        int idNoticia = Integer.parseInt(id);
+        
+        List<Noticia> noticias = dao.findById(idNoticia);
 
         try{
             req.setAttribute("noticias", noticias);

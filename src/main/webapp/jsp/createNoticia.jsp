@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="./resources/css/style-page.css">
         <link rel="stylesheet" href="./resources/css/login-page.css">
         <link rel="stylesheet" href="./resources/css/createNews-page.css">
-        <link rel="stylesheet" href="./resources/css/noticias-page.css">        
+        <%-- <link rel="stylesheet" href="./resources/css/noticias-page.css">         --%>
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <title>Criar nova notícia</title>

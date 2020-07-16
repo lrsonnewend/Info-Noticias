@@ -23,8 +23,13 @@
                                 <%-- <img src="${n.linkImg}" alt="imgnew" style="width:100%"> --%>
                                 <p> <c:out value="${n.titulo}"/> </p>
                                 <p style="font-family: 'DM Sans', sans-serif;">Data: <c:out value="${n.dataCriacao}"/> </p>
+                                <p>
+                                    <a class="button2" alt="Faça login para ver a notícia completa!">Visualizar</a>
+                                </p>
                             </div>
+                            <br>
                         </div>
+                        
                     </c:forEach>
                 </div>
             </section>
