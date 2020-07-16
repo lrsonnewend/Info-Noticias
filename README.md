@@ -2,7 +2,7 @@
 Projeto da matéria de Laboratório de Eng. de Software
 
 # Criaço da base de dados
-Abra o terminal para executar o arquivo script.sql com o comando sudo mysql -u<usuario> -p<senha> bdnews < script.sql. Depois disso, todas as tabelas serão criadas no banco de dados.
+Abra o terminal para executar o arquivo script.sql com o comando sudo mysql -uroot -p<senha_banco_de_dados> bdnews < script.sql. Depois disso, todas as tabelas serão criadas no banco de dados.
 
 # Procedimento de build e execução
 Abra o prompt de comando na pasta raiz onde está localizado o projeto;
