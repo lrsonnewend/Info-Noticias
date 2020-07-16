@@ -1,0 +1,16 @@
+CREATE DATABASE bdnews;
+
+CREATE TABLE usuarios(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    email VARCHAR NOT NULL,
+    senha VARCHAR NOT NULL,
+    isAdmin BOOLEAN NOT NULL
+);
+
+CREATE TABLE noticias(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    corpo VARCHAR NOT NULL,
+    titulo VARCHAR NOT NULL,
+    data_criacao VARCHAR NOT NULL,
+    link_img VARCHAR
+);
